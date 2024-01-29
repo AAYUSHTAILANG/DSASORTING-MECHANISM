@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table>
+    <tr>
+      <th>Sorting Algorithm</th>
+      <th>Mechanism</th>
+      <th>Best Case Complexity</th>
+      <th>Average Case Complexity</th>
+      <th>Worst Case Complexity</th>
+      <th>After 1st Pass Behavior</th>
+      <th>Working</th>
+    </tr>
+    <tr>
+      <td>Bubble Sort</td>
+      <td>Comparison / Greedy</td>
+      <td>O(n)</td>
+      <td>O(n^2)</td>
+      <td>O(n^2)</td>
+      <td>Largest to Rightmost</td>
+      <td>Compares adjacent elements and swaps them if they are in the wrong order. After each pass, the largest unsorted element moves to the rightmost position.</td>
+    </tr>
+    <tr>
+      <td>Selection Sort</td>
+      <td>Selection and Sorting</td>
+      <td>O(n^2)</td>
+      <td>O(n^2)</td>
+      <td>O(n^2)</td>
+      <td>Smallest to Leftmost</td>
+      <td>Divides the input list into two parts: sorted and unsorted. Repeatedly selects the smallest element from the unsorted part and moves it to the sorted part.</td>
+    </tr>
+    <tr>
+      <td>Insertion Sort</td>
+      <td>Comparison</td>
+      <td>O(n)</td>
+      <td>O(n^2)</td>
+      <td>O(n^2)</td>
+      <td>Partially Sorted</td>
+      <td>Builds the sorted array one element at a time. Compares each element with the already sorted part and inserts it in its correct position.</td>
+    </tr>
+    <tr>
+      <td>Merge Sort</td>
+      <td>Divide and Conquer</td>
+      <td>O(n log n)</td>
+      <td>O(n log n)</td>
+      <td>O(n log n)</td>
+      <td>Fully Sorted</td>
+      <td>Divides the array into halves recursively until single elements are reached. Merges the sorted halves to create a fully sorted array.</td>
+    </tr>
+    <tr>
+      <td>Quick Sort</td>
+      <td>Divide and Conquer, Partitioning</td>
+      <td>O(n log n)</td>
+      <td>O(n log n)</td>
+      <td>O(n^2)</td>
+      <td>Partially Sorted</td>
+      <td>Selects a pivot element, partitions the array into elements smaller and larger than the pivot, and recursively sorts the subarrays.</td>
+    </tr>
+    <tr>
+      <td>Heap Sort</td>
+      <td>Binary Heap</td>
+      <td>O(n log n)</td>
+      <td>O(n log n)</td>
+      <td>O(n log n)</td>
+      <td>Partially Sorted (Max Heap)</td>
+      <td>Builds a max-heap (or min-heap) from the array. Repeatedly extracts the root element (max or min) and swaps it with the last element, then heapifies the reduced heap.</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
